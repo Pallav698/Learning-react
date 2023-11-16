@@ -1,0 +1,27 @@
+{
+  "name": "react",
+  "version": "1.0.0",
+  "description": "This is Namste React By Pallav Pushparaj",
+  "main": "app.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PallavPushparaj/NamasteReact.git"
+  },
+  "author": "Pallav Pushparaj",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PallavPushparaj/NamasteReact/issues"
+  },
+  "homepage": "https://github.com/PallavPushparaj/NamasteReact#readme",
+  "devDependencies": {
+    "parcel": "^2.10.1",
+    "process": "^0.11.10"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
+}
