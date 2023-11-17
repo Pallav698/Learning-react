@@ -290,7 +290,8 @@ const resList = [
 
 
 const ResturantCard = (props) => {
-    const {resData} = props;
+    const { resData } = props;
+    
     return (
         <div className="res-card">
             <img className="res-logo"
@@ -301,7 +302,7 @@ const ResturantCard = (props) => {
             <h3>{resData.info.name} </h3>
             <p>{resData.info.costForTwo}</p>
             <p>{resData.info.avgRating}</p>
-            <p style>{resData.info.cuisines.join(",")}</p>
+            <p>{resData.info.cuisines.join(",")}</p>
         </div>
     )
 }
@@ -311,8 +312,9 @@ const Body = () => {
         <div className="body">
             <div className="search">Search</div>
             <div className="res-container">
-                <ResturantCard resData={resList[0]}></ResturantCard>
-                <ResturantCard resData={resList[1]}></ResturantCard>
+                {resList.map( (resturant) => (
+                    <ResturantCard resData = {resturant}></ResturantCard>
+            ))}
             </div>
         </div>
     )
