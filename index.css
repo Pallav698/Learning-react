@@ -1,9 +1,12 @@
-.header {
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* .header {
     display: flex;
     justify-content: space-between;
     border: 1px solid black;
 }
-
+P
 .logo {
     width: 200px;
 }
@@ -102,10 +105,10 @@ a {
 
 
 .menu {
-    /* /border: 1px solid; */
+    
     border-color: rgba(40,44,63,.1);
     z-index: 8;
-    /* padding-top: 16px; */
+    
     margin-bottom: 18px;
     border-bottom: 1px dashed #d3d3d3;
     border-top: 1px dashed #d3d3d3;
@@ -196,4 +199,5 @@ a {
 
 
 
+ */
 

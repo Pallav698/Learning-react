@@ -1,4 +1,7 @@
-const useResturantMenu =  () => {
+import { useState, useEffect } from "react";
+import { MENU_API } from "./constant";
+
+const useResturantMenu =  (resId) => {
 
     const [resInfo, setResInfo] = useState(null);
     
@@ -13,5 +16,6 @@ const useResturantMenu =  () => {
         const data = await response.json();
         setResInfo(data);
     }
+    return resInfo;
 };
 export default useResturantMenu;
