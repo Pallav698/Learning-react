@@ -22,7 +22,7 @@ class UserClass extends React.Component {
         this.setState({
             userinfo:data,
         });
-        console.log("Child componentDidMount");
+        console.log(data);
     }
 
     componentDidUpdate(){

@@ -1,8 +1,16 @@
 import { LOGO_URL } from "../Utils/constant";
 import { Link } from "react-router-dom";
 import useOnlineStatus from "../Utils/useOnlineStatus";
+import UserContext from "../Utils/UserContext";
+import { useContext } from "react";
+
+
+
+
 const Header = () =>{
     const onlineStatus = useOnlineStatus();
+    const { loggedinUser }  = useContext(UserContext);
+    console.log(loggedinUser);
     return (
         <div className="flex justify-between items-center shadow-[0_15px_40px_-20px_rgba(40,44,63,0.15)]">
             <div className="logo-container">
@@ -32,6 +40,9 @@ const Header = () =>{
                         <img src="https://t3.ftcdn.net/jpg/03/14/84/68/360_F_314846831_5jJsC7Us9obgwMjRDqFhs04dodzvnZvi.jpg" className="w-10"></img>
                         </span><span>Cart
                         </span>
+                        </li>
+                        <li className="px-3 mr-3 text-[#3d4152] hover:text-[#fc8019] font-medium text-base">
+                            Hello, {loggedinUser} 
                         </li>
                 </ul>
             </div>
